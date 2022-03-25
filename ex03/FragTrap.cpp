@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:24:16 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/26 01:02:23 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/26 01:19:47 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,18 @@ FragTrap::FragTrap(void): ClapTrap()
 {
 	std::cout << "Frag default constructor called" << std::endl;
 	_name = "Scav Doe";
-	_health = 100;
-	_energy = 50;
-	_damage = 20;
+	_health = FragTrap::defaultHealth;
+	_energy = FragTrap::defaultEnergy;
+	_damage = FragTrap::defaultDamage;
 }
 
 FragTrap::FragTrap(const std::string &name): ClapTrap()
 {
 	std::cout << "Frag string constructor called" << std::endl;
 	_name = name;
-	_health = 100;
-	_energy = 50;
-	_damage = 20;
+	_health = FragTrap::defaultHealth;
+	_energy = FragTrap::defaultEnergy;
+	_damage = FragTrap::defaultDamage;
 }
 
 FragTrap::FragTrap(const FragTrap &a): ClapTrap()

@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:24:16 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/26 00:18:54 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/26 01:27:58 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ ScavTrap::ScavTrap(void): ClapTrap()
 	_damage = 20;
 }
 
-ScavTrap::ScavTrap(const std::string &name): ClapTrap()
+ScavTrap::ScavTrap(const std::string &name): ClapTrap(name)
 {
 	std::cout << "Scav string constructor called" << std::endl;
 	_name = name;
@@ -62,5 +62,5 @@ void	ScavTrap::attack(const std::string &target)
 
 void	ScavTrap::guardGate(void)
 {
-	std::cout << "Scav is now in gate keeper mode" << std::endl;
+	std::cout << "ScavTrap is now in gate keeper mode" << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:24:16 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/26 01:28:02 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/26 01:27:38 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,18 @@ ScavTrap::ScavTrap(void): ClapTrap()
 {
 	std::cout << "Scav default constructor called" << std::endl;
 	_name = "Scav Doe";
-	_health = 100;
-	_energy = 50;
-	_damage = 20;
+	_health = ScavTrap::defaultHealth;
+	_energy = ScavTrap::defaultEnergy;
+	_damage = ScavTrap::defaultDamage;
 }
 
 ScavTrap::ScavTrap(const std::string &name): ClapTrap(name)
 {
 	std::cout << "Scav string constructor called" << std::endl;
 	_name = name;
-	_health = 100;
-	_energy = 50;
-	_damage = 20;
+	_health = ScavTrap::defaultHealth;
+	_energy = ScavTrap::defaultEnergy;
+	_damage = ScavTrap::defaultDamage;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &a): ClapTrap()
@@ -62,5 +62,5 @@ void	ScavTrap::attack(const std::string &target)
 
 void	ScavTrap::guardGate(void)
 {
-	std::cout << "ScavTrap is now in gate keeper mode" << std::endl;
+	std::cout << this->_name << " is now in gate keeper mode" << std::endl;
 }
