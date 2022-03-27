@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 21:22:25 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/25 23:32:46 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/28 00:02:47 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ class ClapTrap
 		virtual void	attack(const std::string &target);
 		void	takeDamage(unsigned int amount);
 		void	beRepaired(unsigned int amount);
-		void	printStats(void);
+		void	printStats(void) const;
 
-		std::string		getName(void) const;
+		const std::string	&getName(void) const;
 		unsigned int	getHealth(void) const;
 		unsigned int	getEnergy(void) const;
 		unsigned int	getDamage(void) const;

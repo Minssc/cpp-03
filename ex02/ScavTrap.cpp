@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:24:16 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/26 01:27:58 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/28 00:04:19 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	ScavTrap::attack(const std::string &target)
 	<< ", causing " << _damage << " points of damage!" << std::endl;
 }
 
-void	ScavTrap::guardGate(void)
+void	ScavTrap::guardGate(void) const
 {
-	std::cout << "ScavTrap is now in gate keeper mode" << std::endl;
+	std::cout << "ScavTrap " << _name << " is now in gate keeper mode" << std::endl;
 }

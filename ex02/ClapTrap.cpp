@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 21:22:39 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/26 00:18:47 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/28 00:03:01 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,13 +78,13 @@ void	ClapTrap::beRepaired(unsigned int amount)
 	_health += amount;
 }
 
-void	ClapTrap::printStats(void)
+void	ClapTrap::printStats(void) const
 {
 	std::cout << "Stats of " << _name << ": hp = " << _health
 	<< ", energy = " << _energy << ", damage = " << _damage << std::endl;
 }
 
-std::string		ClapTrap::getName(void) const
+const std::string	&ClapTrap::getName(void) const
 {
 	return (_name);
 }

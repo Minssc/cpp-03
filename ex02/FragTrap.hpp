@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:23:43 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/26 00:17:53 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/28 00:04:31 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class FragTrap: public ClapTrap
 
 		const FragTrap	&operator=(const FragTrap &a);
 
-		void	highFivesGuys(void);
+		void	highFivesGuys(void) const;
 };
 
 # endif
