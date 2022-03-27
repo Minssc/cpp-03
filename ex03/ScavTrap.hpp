@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:23:43 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/26 00:56:20 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/28 00:07:29 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ class ScavTrap: virtual public ClapTrap
 		const ScavTrap	&operator=(const ScavTrap &a);
 
 		virtual	void	attack(const std::string &target);
-		void	guardGate(void);
+		void	guardGate(void) const;
 
-		static const unsigned int	defaultHealth = 100;
-		static const unsigned int	defaultEnergy = 50;
-		static const unsigned int	defaultDamage = 20;
+		static const unsigned int	defaultHealth = 100u;
+		static const unsigned int	defaultEnergy = 50u;
+		static const unsigned int	defaultDamage = 20u;
 };
 
 # endif

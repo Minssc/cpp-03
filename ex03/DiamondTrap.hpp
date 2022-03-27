@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 21:22:25 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/26 01:12:35 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/28 00:07:48 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class DiamondTrap: public ScavTrap, public FragTrap
 
 		DiamondTrap	&operator=(const DiamondTrap &a);
 
-		void	whoAmI(void);
+		void	whoAmI(void) const;
 
 		void	attack(const std::string &target);
 		// void	takeDamage(unsigned int amount);
