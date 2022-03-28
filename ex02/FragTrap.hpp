@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:23:43 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/28 00:04:31 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/28 13:03:51 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define __FRAGTRAP_HPP__
 
 #include "ClapTrap.hpp"
+#include <string>
 
 class FragTrap: public ClapTrap
 {

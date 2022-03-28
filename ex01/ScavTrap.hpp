@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:23:43 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/27 23:59:06 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/28 13:03:43 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define __SCAVTRAP_HPP__
 
 #include "ClapTrap.hpp"
+#include <string>
 
 class ScavTrap: public ClapTrap
 {
