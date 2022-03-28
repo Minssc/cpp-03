@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 21:22:39 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/27 23:59:57 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/03/28 12:59:34 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <limits>
 
 ClapTrap::ClapTrap(void)
-	: _name("John Doe"), _health(10), _energy(10), _damage(0)
+	: _name("Clap Doe"), _health(10), _energy(10), _damage(0)
 {
 	std::cout << "Clap default constructor called" << std::endl;
 }
