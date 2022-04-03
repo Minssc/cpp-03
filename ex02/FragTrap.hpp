@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:23:43 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/28 13:03:51 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/04/03 15:07:28 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class FragTrap: public ClapTrap
 		FragTrap(void);
 		FragTrap(const std::string &name);
 		FragTrap(const FragTrap &a);
-		~FragTrap(void);
+		virtual	~FragTrap(void);
 
 		const FragTrap	&operator=(const FragTrap &a);
 

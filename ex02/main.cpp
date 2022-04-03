@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 21:21:57 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/26 00:21:01 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/04/03 15:09:21 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,10 @@ int main(void)
 	cp = new FragTrap;
 	cp->attack("hi im clap");
 	delete cp;
+
+	FragTrap f("minsunki");
+	f.highFivesGuys();
+	f.attack("moulinette");
+	
 	return (0);
 }

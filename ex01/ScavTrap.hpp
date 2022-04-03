@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:23:43 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/28 13:03:43 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/04/03 15:06:44 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ class ScavTrap: public ClapTrap
 		ScavTrap(void);
 		ScavTrap(const std::string &name);
 		ScavTrap(const ScavTrap &a);
-		~ScavTrap(void);
+		virtual	~ScavTrap(void);
 
 		const ScavTrap	&operator=(const ScavTrap &a);
 
-		void	attack(const std::string &target);
+		virtual	void	attack(const std::string &target);
 		void	guardGate(void) const;
 
 };
