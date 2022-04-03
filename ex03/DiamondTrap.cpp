@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 21:22:39 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/28 00:07:57 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/04/03 14:57:19 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,12 @@ DiamondTrap	&DiamondTrap::operator=(const DiamondTrap &a)
 
 void	DiamondTrap::attack(const std::string &target)
 {
-	if (!_health || !_energy)
-		return ;
-	_energy--;
-	std::cout << "DiamondTrap " << _name << " attacks " << target
-	<< ", causing " << _damage << " points of damage!" << std::endl;
+	ScavTrap::attack(target);
+	// if (!_health || !_energy)
+	// 	return ;
+	// _energy--;
+	// std::cout << "DiamondTrap " << _name << " attacks " << target
+	// << ", causing " << _damage << " points of damage!" << std::endl;
 }
 
 void	DiamondTrap::whoAmI(void) const
